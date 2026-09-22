@@ -46,13 +46,17 @@ LSTM 계열 구조를 순차적으로 비교하면서 CNN의 국소 패턴 추�
 ```text
 .
 ├── notebooks/
-│   └── 01_eda.ipynb
+│   └── 01_heat_demand_modeling.ipynb
 └── README.md
 ```
 
-현재 공개 저장소에는 정리 가능한 EDA 노트북을 우선 공개하고 있습니다.  
-전체 프로젝트의 모델링 과정과 결과 요약은 위 README 및 [AI/ML 포트폴리오](https://kimsportpolio.netlify.app/?ver=ai)에서 확인할 수 있습니다.
+공개 노트북에는 데이터 로딩, Train-only scaling, 시퀀스 생성, BiLSTM 및 CNN+BiLSTM+Attention 모델 구성 코드가 포함되어 있습니다.  
+데이터 파일은 저장소에 포함하지 않습니다.
 
 ## Tech Stack
 
 **Python · Pandas · Scikit-learn · TensorFlow/Keras · LSTM · CNN · Attention · Time Series**
+
+## Portfolio
+
+[AI / Machine Learning Portfolio](https://kimsportpolio.netlify.app/?ver=ai)
