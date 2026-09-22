@@ -26,7 +26,9 @@
 
 ### 2. Sequence continuity
 Validation/Test 구간을 별도로 자르면 앞 시점 정보가 끊겨 예측 가능한 시퀀스가 누락될 수 있었습니다.  
-Sliding Window와 앞 구간 패딩 방식을 사용해 경계 구간의 연속성을 보완했습니다.
+당시 실험에서는 validation/test 앞 구간을 이어 붙이는 방식으로 경계 시퀀스 손실을 보완했습니다.
+
+현재 공개된 `src/heat_demand_model.py`는 **핵심 모델 구조, train-only scaling, sliding-window 생성 로직**을 검토하기 쉽게 정리한 모듈이며, 당시 경계 패딩 실험 전체를 그대로 재현한 코드는 아닙니다.
 
 ### 3. Data leakage prevention
 Scaler는 전체 데이터가 아니라 **훈련 데이터 기준으로만 fit**하고 Validation/Test에는 transform만 적용했습니다.
