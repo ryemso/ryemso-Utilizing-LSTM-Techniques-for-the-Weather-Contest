@@ -47,10 +47,15 @@ LSTM 계열 구조를 순차적으로 비교하면서 CNN의 국소 패턴 추�
 .
 ├── notebooks/
 │   └── 01_heat_demand_modeling.ipynb
+├── src/
+│   └── heat_demand_model.py
+├── requirements.txt
 └── README.md
 ```
 
-공개 노트북에는 데이터 로딩, Train-only scaling, 시퀀스 생성, BiLSTM 및 CNN+BiLSTM+Attention 모델 구성 코드가 포함되어 있습니다.  
+- `src/heat_demand_model.py`: Train-only scaling, sliding-window sequence 생성, CNN+BiLSTM+Attention 모델, 평가 함수
+- `notebooks/01_heat_demand_modeling.ipynb`: 당시 실험 흐름을 보존한 노트북
+
 데이터 파일은 저장소에 포함하지 않습니다.
 
 ## Tech Stack
